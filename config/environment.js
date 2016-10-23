@@ -4,13 +4,20 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'super-rentals',
     environment: environment,
-    rootURL: '/',
+    baseURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
       }
+    },
+
+    firebase: {
+      apiKey: "AIzaSyBdQ_cnqpvUBuynmDE6fo-HdTGA1cARI5s",
+      authDomain: "super-rentals-b1cfc.firebaseapp.com",
+      databaseURL: "https://super-rentals-b1cfc.firebaseio.com",
+      storageBucket: "super-rentals-b1cfc.appspot.com",
     },
 
     APP: {
